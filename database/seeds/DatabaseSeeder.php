@@ -11,6 +11,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+          DB::table('status')->insert([
+          	'id' => 1,
+            'name' => "activo"
+            
+            
+        ],[
+          	'id' => 2,
+            'name' => "inactivo"
+            
+            
+        ]);
     }
 }
